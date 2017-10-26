@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Capstone.Web.Models.SurveyModel>
+
+@{
+    ViewBag.Title = "Surveys";
+}
+
+<h2>Top Parks!</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Number of Votes
+        </th>
+        <th>
+            Park
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParkVote)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParkName)
+        </td>
+        <td>
+            @Html.ActionLink("Go to Park", "Details", new {  id=item.ParkCode  }) 
+        </td>
+    </tr>
+}
+
+</table>

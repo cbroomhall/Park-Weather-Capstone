@@ -1,18 +1,50 @@
-﻿
+﻿@model IEnumerable<Capstone.Web.Models.ParkModel>
+
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
 }
 
-<!DOCTYPE html>
+<h2>Welcome to National Parks Weather Service</h2>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div> 
-        No content, yet.
-    </div>
-</body>
-</html>
+
+<table class="table">
+    <tr>
+        <th>
+            
+        </th>
+        <th>
+            Park Name
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            Description
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <a href="@Url.Action("Details", "Home", new {id = item.ParkCode})"><img src="~/Content/img/parks/@(item.ParkCode).jpg" /></a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParkName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParkDescription)
+        </td>
+        <td>
+            @Html.ActionLink("Explore", "Details", new { id=item.ParkCode})
+            <br />
+            <br />
+            @Html.ActionLink("Current Weather", "Forecast", new { id = item.ParkCode })
+        </td>
+    </tr>
+}
+
+</table>

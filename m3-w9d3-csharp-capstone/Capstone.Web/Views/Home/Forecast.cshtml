@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Capstone.Web.Models.WeatherModel>
+
+@{
+    ViewBag.Title = "Forecast";
+}
+
+<h2> 5-Day Forecast </h2>
+
+
+
+<table class="table">
+    <tr>
+        <th>
+         
+        </th>
+        <th>
+            Day
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Low)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.High)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Forecast)
+        </th>
+        <th>
+            Recommendation(s)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="~/Content/img/weather/@(item.Forecast).png" />
+        </td>
+        <td>
+            @item.DayForecast(item.FiveDayForecastValue)
+        </td>
+        <td>
+            @item.GetTemp(item.IsFahrenheit, item.Low)
+        </td>
+        <td>
+            @item.GetTemp(item.IsFahrenheit, item.High)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Forecast)
+        </td>
+        <td>
+            @item.Recommendation(item.Forecast, item.Low, item.High)
+        </td>
+    </tr>
+}
+
+</table>

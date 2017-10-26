@@ -1,0 +1,24 @@
+﻿@model Capstone.Web.Models.WeatherModel
+
+@{
+    ViewBag.Title = "Preferences";
+}
+
+<h2>Preferences</h2>
+
+@using (Html.BeginForm("Preferences", "Home", FormMethod.Post))
+{
+<div>
+@Html.LabelFor(Model => Model.IsFahrenheit, "Fahrenheit")
+@Html.RadioButtonFor(m => m.IsFahrenheit, true)
+</div>
+
+<div>
+@Html.LabelFor(Model => Model.IsFahrenheit, "Celsius")
+@Html.RadioButtonFor(m => m.IsFahrenheit, false)
+</div>
+
+
+<button>Submit!</button>
+}
+

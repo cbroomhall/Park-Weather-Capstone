@@ -8,6 +8,8 @@ namespace Capstone.Web.Dal
 {
     public interface IParkWeatherDal
     {
+
+
         int TestMethod();
     }
 }
