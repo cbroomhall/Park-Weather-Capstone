@@ -5,11 +5,25 @@
 }
 
 <h2>@Model.ParkName Details</h2>
+<h5>@Html.ActionLink("Get 5-Day Forecast", "Forecast", new { id = Model.ParkCode })</h5>
 
 <div>
-    <h4>ParkModel</h4>
     <hr />
     <dl class="dl-horizontal">
+        <dt>
+
+        </dt>
+
+        <dd>
+            <img style="height: 250px; width: auto" src="~/Content/img/parks/@(Model.ParkCode).jpg" />
+        </dd>
+        <dd>
+            "@Html.DisplayFor(model => model.InspirationalQuote)"
+        </dd>
+        <dd>
+            -@Html.DisplayFor(model => model.InspirationalQuoteSource)
+        </dd>
+        <br />
         <dt>
             Park Name
         </dt>
@@ -83,15 +97,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.InspirationalQuote)
-        </dt>
 
-        <dd>
-            "@Html.DisplayFor(model => model.InspirationalQuote)"
-        </dd>
-
-        <dt>
-            
         </dt>
 
         <dd>
@@ -125,6 +131,7 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Get 5-Day Forecast", "Forecast", new { id = Model.ParkCode }) |
     @Html.ActionLink("Return to List", "Index")
 </p>
+
+</body>
