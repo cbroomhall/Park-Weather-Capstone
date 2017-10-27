@@ -52,7 +52,7 @@ audio:not([controls]) {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: /*sans-*/serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -343,6 +343,7 @@ a:hover,
 a:focus {
   color: #2a6496;
   text-decoration: underline;
+  
 }
 
 a:focus {

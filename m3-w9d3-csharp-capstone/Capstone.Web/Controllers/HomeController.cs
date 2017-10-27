@@ -69,7 +69,12 @@ namespace Capstone.Web.Controllers
             ParkWeatherSqlDal w = new ParkWeatherSqlDal(connectionString);
             w.AddSurveyResult(model);
 
-            return RedirectToAction("Surveys");
+            if (!ModelState.IsValid)
+            {
+                return View("NewSurvey", model);
+            }
+
+            return RedirectToAction("Surveys", "Home");
         }
 
         public ActionResult Surveys()
