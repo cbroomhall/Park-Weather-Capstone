@@ -6788,6 +6788,11 @@ tr.visible-print {
   display: none !important;
 }
 
+#button
+{
+
+}
+
 th.visible-print,
 td.visible-print {
   display: none !important;
