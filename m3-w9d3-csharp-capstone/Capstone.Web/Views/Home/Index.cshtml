@@ -39,11 +39,11 @@
             @Html.DisplayFor(modelItem => item.ParkDescription)
         </td>
         <td>
-            @Html.ActionLink("Explore", "Details", new { id=item.ParkCode})
+            <div id="actionLink">@Html.ActionLink("Explore", "Details", new { id = item.ParkCode })</div>
             <br />
             <br />
-            @Html.ActionLink("Current Weather", "Forecast", new { id = item.ParkCode })
-        </td>
+            <div id="actionLink">@Html.ActionLink("Current Weather", "Forecast", new { id = item.ParkCode })</div>
+</td>
     </tr>
 }
 

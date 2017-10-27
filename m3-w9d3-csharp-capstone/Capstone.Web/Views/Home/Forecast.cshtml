@@ -8,13 +8,14 @@
 
 
 
+
 <table class="table">
     <tr>
         <th>
-         
+            Day
         </th>
         <th>
-            Day
+            
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Low)
@@ -33,10 +34,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            <img src="~/Content/img/weather/@(item.Forecast).png" />
+            @item.DayForecast(item.FiveDayForecastValue)
         </td>
         <td>
-            @item.DayForecast(item.FiveDayForecastValue)
+            <img style="height:120px"src="~/Content/img/weather/@(item.Forecast).png" />
         </td>
         <td>
             @item.GetTemp(item.IsFahrenheit, item.Low)

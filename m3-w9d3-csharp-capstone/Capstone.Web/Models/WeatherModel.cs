@@ -33,6 +33,10 @@ namespace Capstone.Web.Models
             {
                 result += "Pack raingear. Wear waterproof shoes. ";
             }
+            else if(forecast == "partly cloudy")
+            {
+                return "This is Nathan's favourite weather.";
+            }
             else
             {
                 result += "";
@@ -74,19 +78,19 @@ namespace Capstone.Web.Models
 
             else if (dayValue == 3)
             {
-                return "Three day forecast";
+                return "Three-day Forecast";
             }
 
 
             else if (dayValue == 4)
             {
-                return "Four day forecast";
+                return "Four-day Forecast";
             }
 
 
             else if (dayValue == 5)
             {
-                return "Five day forecast";
+                return "Five-day Forecast";
             }
 
             return "";

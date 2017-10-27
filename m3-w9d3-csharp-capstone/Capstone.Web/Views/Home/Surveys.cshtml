@@ -27,8 +27,8 @@
             @Html.DisplayFor(modelItem => item.ParkName)
         </td>
         <td>
-            @Html.ActionLink("Go to Park", "Details", new {  id=item.ParkCode  }) 
-        </td>
+            <div id="actionLink">@Html.ActionLink("Go to Park", "Details", new { id = item.ParkCode })</div>
+</td>
     </tr>
 }
 

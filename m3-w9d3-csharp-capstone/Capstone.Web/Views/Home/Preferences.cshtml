@@ -6,19 +6,23 @@
 
 <h2>Preferences</h2>
 
+
+
 @using (Html.BeginForm("Preferences", "Home", FormMethod.Post))
 {
-<div>
-@Html.LabelFor(Model => Model.IsFahrenheit, "Fahrenheit")
-@Html.RadioButtonFor(m => m.IsFahrenheit, true)
-</div>
+    <div style="display:inline-block">
+        <div>
+            @Html.LabelFor(Model => Model.IsFahrenheit, "Fahrenheit")
+            @Html.RadioButtonFor(m => m.IsFahrenheit, true) |
+        
+            @Html.LabelFor(Model => Model.IsFahrenheit, "Celsius")
+            @Html.RadioButtonFor(m => m.IsFahrenheit, false) |
+        </div>
+    </div>
 
-<div>
-@Html.LabelFor(Model => Model.IsFahrenheit, "Celsius")
-@Html.RadioButtonFor(m => m.IsFahrenheit, false)
-</div>
 
-
-<button>Submit!</button>
+<button>Save</button>
 }
+
+<img style="height:400px"src="~/Content/img/weather/temperature-conversion-celsius-fahrenheit.jpg" />
 
