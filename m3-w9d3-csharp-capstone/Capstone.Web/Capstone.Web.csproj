@@ -115,6 +115,7 @@
     <Content Include="Content\img\backpack2.jpg" />
     <Content Include="Content\img\geek.png" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\ParkLogo.png" />
     <Content Include="Content\img\parks\cvnp.jpg" />
     <Content Include="Content\img\parks\enp.jpg" />
     <Content Include="Content\img\parks\gcnp.jpg" />
