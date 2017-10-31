@@ -37,6 +37,10 @@ namespace Capstone.Web.Models
             {
                 return "We're still unsure which part will be cloudy. Check back later for details.";
             }
+            else if(forecast == "partly cloudy")
+            {
+                return "This is Nathan's favourite weather.";
+            }
             else
             {
                 result += "";

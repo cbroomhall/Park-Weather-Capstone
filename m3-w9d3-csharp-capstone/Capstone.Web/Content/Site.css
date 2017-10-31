@@ -17,7 +17,10 @@ textarea {
 }
 #actionLink:hover, #actionLink:active {
    font-size: 130% !important;
+<<<<<<< HEAD
    text-decoration: none !important;
+=======
+>>>>>>> df11e7175068ea2cee695f4b1aecc3cb4b76290e
 }
 
 #SmallerImg {

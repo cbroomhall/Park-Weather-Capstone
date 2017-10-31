@@ -99,8 +99,8 @@
     <Compile Include="PageObjects\NewSurveyResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeleniumTests\NewSurveyTest.cs" />
-    <Compile Include="UnitTests\SurveyTest.cs" />
     <Compile Include="UnitTests\WeatherModelTest.cs" />
+    <Compile Include="UnitTests\ParkWeatherSqlDALTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
