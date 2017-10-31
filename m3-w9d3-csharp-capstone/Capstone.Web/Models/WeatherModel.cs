@@ -31,11 +31,11 @@ namespace Capstone.Web.Models
             }
             else if(forecast == "rain")
             {
-                result += "Pack raingear. Wear waterproof shoes. ";
+                result += "Pack raingear and a rubber ducky. Wear waterproof shoes. ";
             }
             else if(forecast == "partly cloudy")
             {
-                return "This is Nathan's favourite weather.";
+                return "We're still unsure which part will be cloudy. Check back later for details.";
             }
             else
             {
@@ -101,7 +101,7 @@ namespace Capstone.Web.Models
             if (isFahrenheit == false)
             {
                 temperature = (temperature - 32) / 1.8;
-                return temperature.ToString("0.00") + " C";
+                return temperature.ToString("0.0") + " C";
             }
             return temperature.ToString() + " F";
         }

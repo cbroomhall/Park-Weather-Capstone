@@ -17,5 +17,25 @@ textarea {
 }
 #actionLink:hover, #actionLink:active {
    font-size: 130% !important;
+   text-decoration: none !important;
+}
+
+#SmallerImg {
+    height: 20%;
+    width: auto;
+}
+
+#button {
+}
+#navbar-awesome {
+    background-image: url('img/darkforest.jpg');
+    min-height: 55px;
+    border-width: 10px !important;
+    border-color: black !important;
+    font-size: 22px !important;
+    color: white !important;
+}
+#navbar-awesome:hover #navbar-awesome:focus{
+    color:gray;
 }
 

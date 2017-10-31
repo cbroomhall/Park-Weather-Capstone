@@ -311,11 +311,11 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:'Times New Roman', Times, serif
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color:antiquewhite;
 }
 
 input,
@@ -4026,7 +4026,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   z-index: 1000;
-  min-height: 50px;
+  min-height: 120px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4172,7 +4172,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: fixed;
   right: 0;
   left: 0;
-  border-width: 0 0 1px;
+  border-width: 0 0 5px;
 }
 
 @media (min-width: 768px) {
@@ -4502,8 +4502,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+    background-image: url('img/trees.jpg');
+    border-color:forestgreen;
 }
 
 .navbar-inverse .navbar-brand {
@@ -6786,6 +6786,11 @@ td.hidden-lg {
 
 tr.visible-print {
   display: none !important;
+}
+
+#button
+{
+
 }
 
 th.visible-print,

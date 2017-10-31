@@ -5,11 +5,25 @@
 }
 
 <h2>@Model.ParkName Details</h2>
+<h5>@Html.ActionLink("Get 5-Day Forecast", "Forecast", new { id = Model.ParkCode })</h5>
 
 <div>
-    <h4>ParkModel</h4>
     <hr />
     <dl class="dl-horizontal">
+        <dt>
+
+        </dt>
+
+        <dd>
+            <img style="height: 250px; width: 800px" src="~/Content/img/parks/@(Model.ParkCode).jpg" />
+        </dd>
+        <dd>
+            "@Html.DisplayFor(model => model.InspirationalQuote)"
+        </dd>
+        <dd>
+            -@Html.DisplayFor(model => model.InspirationalQuoteSource)
+        </dd>
+        <br />
         <dt>
             Park Name
         </dt>
@@ -31,7 +45,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Acreage)
+            @Html.DisplayFor(model => model.Acreage) acres
         </dd>
 
         <dt>
@@ -39,7 +53,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.ElevationInFeet)
+            @Html.DisplayFor(model => model.ElevationInFeet) ft.
         </dd>
 
         <dt>
@@ -47,7 +61,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.MilesOfTrail)
+            @Html.DisplayFor(model => model.MilesOfTrail) miles
         </dd>
 
         <dt>
@@ -71,7 +85,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.YearFounded)
+            @Html.DisplayFor(model => model.YearFounded) A.D.
         </dd>
 
         <dt>
@@ -80,22 +94,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.AnnualVistorCount)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.InspirationalQuote)
-        </dt>
-
-        <dd>
-            "@Html.DisplayFor(model => model.InspirationalQuote)"
-        </dd>
-
-        <dt>
-            
-        </dt>
-
-        <dd>
-            -@Html.DisplayFor(model => model.InspirationalQuoteSource)
         </dd>
 
         <dt>
@@ -111,7 +109,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.EntryFee)
+            $@Html.DisplayFor(model => model.EntryFee)
         </dd>
 
         <dt>
@@ -119,12 +117,13 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.NumberOfAnimalSpecies)
+            @Html.DisplayFor(model => model.NumberOfAnimalSpecies) species of critters
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Get 5-Day Forecast", "Forecast", new { id = Model.ParkCode }) |
     @Html.ActionLink("Return to List", "Index")
 </p>
+
+</body>
