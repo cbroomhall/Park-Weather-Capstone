@@ -10,7 +10,7 @@ namespace Capstone.Web.Tests.UnitTests
         [TestMethod]
         public void RecommendationTest()
         {
-            WeatherModel testObject = new WeatherModel
+            WeatherModel testObject = new WeatherModel();
         }
     }
 }

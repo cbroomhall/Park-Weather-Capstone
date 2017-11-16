@@ -119,11 +119,8 @@
     <Content Include="Content\img\field.jpg" />
     <Content Include="Content\img\geek.png" />
     <Content Include="Content\img\logo.png" />
-
     <Content Include="Content\img\parched.jpg" />
-
     <Content Include="Content\img\ParkLogo.png" />
-
     <Content Include="Content\img\parks\cvnp.jpg" />
     <Content Include="Content\img\parks\enp.jpg" />
     <Content Include="Content\img\parks\gcnp.jpg" />
@@ -140,6 +137,7 @@
     <Content Include="Content\img\weather\cloudy.png" />
     <Content Include="Content\img\weather\partly cloudy.png" />
     <Content Include="Content\img\weather\rain.png" />
+    <Content Include="Content\img\weather\depends.png" />
     <Content Include="Content\img\weather\snow.png" />
     <Content Include="Content\img\weather\sunny.png" />
     <Content Include="Content\img\weather\temperature-conversion-celsius-fahrenheit.jpg" />

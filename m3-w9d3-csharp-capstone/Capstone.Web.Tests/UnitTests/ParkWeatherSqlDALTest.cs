@@ -25,7 +25,7 @@ namespace Capstone.Web.Tests.UnitTests
 
                 List<ParkModel> Parks = ParkWeatherDAL.GetAllParks();
 
-                Assert.AreEqual(10, Parks.Count);
+                Assert.AreEqual(11, Parks.Count);
             }
         }
 
